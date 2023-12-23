@@ -1,3 +1,6 @@
 {
-  "buildCommand": "node build"
+  "version": 2,
+  "name": "contacts_project",
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
 }
